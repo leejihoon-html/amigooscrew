@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pameran Baju</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <h1><i class="fas fa-tshirt"></i> Amigos Articles</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Coming Soon</h2>
+                <p>Shiro Oni Suit.</p>
+                <button onclick="scrollToSection('gallery')">Lihat Koleksi</button>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="IMG_4382.JPG" alt="Baju 1">
+                    <div class="gallery-overlay">
+                        <p>Shiro Oni Suit - BackEnd</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG_4381.JPG" alt="Baju 2">
+                    <div class="gallery-overlay">
+                        <p>Shiro Oni Suit - FrontEnd</p>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak gambar produk sesuai kebutuhan -->
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Kami adalah penyedia baju dengan kualitas terbaik dan desain terkini.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Amigos Crew HNH Group. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
